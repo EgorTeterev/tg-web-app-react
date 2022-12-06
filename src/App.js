@@ -3,8 +3,6 @@ import './App.css';
 import Header from './components/Header/Header';
 import { useTelegram } from './hooks/useTelegram';
 
-const tg = window.Telegram.WebApp;
-
 function App() {
   const {onToggleButton,tg} = useTelegram()
     
