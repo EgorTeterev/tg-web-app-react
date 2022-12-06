@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
-import Header from './Header/Header.jsx';
+import Header from './components/Header/Header';
 
 const tg = window.Telegram.WebApp;
 
