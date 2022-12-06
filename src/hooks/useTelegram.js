@@ -12,7 +12,6 @@ export function useTelegram () {
     } else {
       tg.MainButton.show()
     }
-  
   }
 
   return {
