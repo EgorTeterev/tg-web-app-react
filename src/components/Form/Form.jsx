@@ -20,14 +20,14 @@ const Form = () => {
       houseNumber
      }
      tg.sendData(JSON.stringify(data))
-  },[])
+  },[country,city,street,houseNumber])
 
   useEffect(()=>{
     tg.WebApp.onEvent('mainButtonClicked',onSendData)
     return () =>{
       tg.WebApp.offEvent('mainButtonClicked',onSendData)
     }
-  })
+  },[onSendData])
 
   useEffect(()=>{
     tg.MainButton.setParams({text:'Отправить'})
