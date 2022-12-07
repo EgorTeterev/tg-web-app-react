@@ -2,7 +2,7 @@ import React from 'react';
 import { useTelegram } from '../../hooks/useTelegram';
 import Button from '../Button/Button';
 import './Header.css';
-
+const tg = window.Telegram.WebApp;
 
 const Header = () => {
   const {user,onClose} = useTelegram()
@@ -11,7 +11,7 @@ const Header = () => {
    <div className={'header'}>
       <Button onClick={onClose}>Close</Button>
       <span className={'username'}>
-        {user}
+        {tg.initDataUnsafe.user.username} 
       </span>
    </div>
   );
