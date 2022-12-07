@@ -2,10 +2,9 @@ import React from 'react';
 import { useTelegram } from '../../hooks/useTelegram';
 import Button from '../Button/Button';
 import './Header.css';
-const tg = window.Telegram.WebApp;
 
 const Header = () => {
-  const {user,onClose} = useTelegram()
+  const {tg,user,onClose} = useTelegram()
   
   return (
    <div className={'header'}>

@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      Work {console.log(tg.initDataUnsafe)}
+      Work 
       <button onClick={onToggleButton}>toggle</button>
     </div>
   );
