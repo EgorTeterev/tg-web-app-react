@@ -9,7 +9,7 @@ const Form = () => {
   const [city,setcity] = useState('');
   const [street,setstreet] = useState('');
   const [houseNumber,sethouseNumber] = useState('');
-  const {tg} = useTelegram;
+  const {tg} = useTelegram();
 
   useEffect(()=>{
     tg.MainButton.setParams({text:'Отправить'})
