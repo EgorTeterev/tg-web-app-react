@@ -20,7 +20,6 @@ function App() {
         <Route index element={<Form/>}/>
         <Route path={'productLict'} element={<ProductList/>}/>
       </Routes>
-        <Form/>
     </div>
   );
 }
